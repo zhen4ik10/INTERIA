@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240320203519">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240321220226">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll="10" class="header">
 			<div class="header__container">
 				<h2 class="header__logo logo">INTERIA</h2>
 				<div class="header__menu menu">
@@ -45,8 +45,17 @@
 		</header>
 		<main class="page">
 			<section class="page__hero hero">
-				<div class="hero__image">
-					<picture><source srcset="img/hero-bg.webp" type="image/webp"><img src="img/hero-bg.jpg" alt="hero-bg"></picture>
+				<div class="hero__container">
+					<span class="hero__swipe-down">SWIPE DOWN</span>
+					<div class="head-content">
+						<h2 class="title title--margin">We design your room aesthetic</h2>
+						<div class="text text--margin">
+							<p>
+								Lectus quam id leo in vitae turpis nisi porta lorem mollis.
+							</p>
+						</div>
+						<button class="head-content__play _icon-play"></button>
+					</div>
 				</div>
 			</section>
 
@@ -79,7 +88,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240320203519"></script>
+	<script src="js/app.min.js?_v=20240321220226"></script>
 </body>
 
 </html>
