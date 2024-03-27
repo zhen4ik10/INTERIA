@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240327172957">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240327200306">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -267,6 +267,56 @@
 					</div>
 				</div>
 			</div>
+			<section class="page__blog blog">
+				<div class="blog__container">
+					<div class="head-content">
+						<h4 class="label labal--margin">Blog</h4>
+						<h2 class="title title--margin">The latest article</h2>
+					</div>
+					<div class="blog__item item-blog">
+						<div class="item-blog__item">
+							<div class="item-blog__image">
+								<picture><source srcset="img/blog/image_1.webp" type="image/webp"><img src="img/blog/image_1.jpg" alt="image-1"></picture>
+							</div>
+							<div class="item-blog__body">
+								<div class="item-blog__text text">
+									<p>Posuere urna nec tincidunt praesent egestas maecenas.</p>
+								</div>
+								<a href="#!" class="item-blog__link _icon-a-right">LEARN MORE</a>
+							</div>
+						</div>
+						<div class="item-blog__item">
+							<div class="item-blog__image">
+								<picture><source srcset="img/blog/image_2.webp" type="image/webp"><img src="img/blog/image_2.jpg" alt="image-2"></picture>
+							</div>
+							<div class="item-blog__body">
+								<div class="item-blog__text text">
+									<p>Posuere urna nec tincidunt praesent egestas maecenas.</p>
+								</div>
+								<a href="#!" class="item-blog__link _icon-a-right">LEARN MORE</a>
+							</div>
+						</div>
+						<div class="item-blog__item">
+							<div class="item-blog__image">
+								<picture><source srcset="img/blog/image_3.webp" type="image/webp"><img src="img/blog/image_3.jpg" alt="image-3"></picture>
+							</div>
+							<div class="item-blog__body">
+								<div class="item-blog__text text">
+									<p>Posuere urna nec tincidunt praesent egestas maecenas.</p>
+								</div>
+								<a href="#!" class="item-blog__link _icon-a-right">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+					<form action="files/sendmail/sendmail.php" method="POST" class="blog__form form-blog">
+						<h3 class="title form-blog__title" for="">Newsletter</h3>
+						<div class="form-blog__body">
+							<input type="text" name="form[email]" data-error="Error" placeholder="Enter your email" class="input form-blog__input">
+							<button type="submit" class="button form-blog__button">SUBSCRIBE</button>
+						</div>
+					</form>
+				</div>
+			</section>
 			<!-- <div class="head-content">
     <h4 class="label labal--margin">ABOUT</h4>
     <h2 class="title title--margin">We are the best interior design studio in london</h2>
@@ -282,21 +332,61 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<h6 class="footer__copy">
-					© Copyright by AltDesain-Studio – All right reserved.
-				</h6>
-				<ul class="footer__list">
-					<li class="footer__item">
-						<a href="#!" class="footer__link label">TERMS</a>
-					</li>
-					<li class="footer__item">
-						<a href="#!" class="footer__link label">PRIVACY</a>
-					</li>
-				</ul>
+				<div class="footer__menu menu-footer">
+					<ul class="menu-footer__list">
+						<li class="menu-footer__item">
+							<a href="#!" class="menu-footer__link">home</a>
+						</li>
+						<li class="menu-footer__item">
+							<a href="#!" class="menu-footer__link">about</a>
+						</li>
+						<li class="menu-footer__item">
+							<a href="#!" class="menu-footer__link">services</a>
+						</li>
+						<li class="menu-footer__item">
+							<a href="#!" class="menu-footer__link">team</a>
+						</li>
+						<li class="menu-footer__item">
+							<a href="#!" class="menu-footer__link">blog</a>
+						</li>
+						<li class="menu-footer__item">
+							<a href="#!" class="menu-footer__link">contact</a>
+						</li>
+					</ul>
+					<h5 class="menu-footer__label label">INTERIA</h5>
+				</div>
+				<div class="footer__body body-footer">
+					<div class="body-footer__social">
+						<a href="#!" class="body-footer__link-social _icon-s-facebook"></a>
+						<a href="#!" class="body-footer__link-social _icon-s-twitter"></a>
+						<a href="#!" class="body-footer__link-social _icon-s-linkedin"></a>
+						<a href="#!" class="body-footer__link-social _icon-s-instagram"></a>
+					</div>
+					<div class="body-footer__text text">
+						<p>
+							Posuere urna nec tincidunt praesent egestas maecenas pharetra convallis posuere ipsum nunc.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom bottom-footer">
+				<div class="bottom-footer__container">
+					<h6 class="bottom-footer__copy">
+						© Copyright by AltDesain-Studio – All right reserved.
+					</h6>
+					<ul class="bottom-footer__list">
+						<li class="bottom-footer__item">
+							<a href="#!" class="bottom-footer__link label">TERMS</a>
+						</li>
+						<li class="bottom-footer__item">
+							<a href="#!" class="bottom-footer__link label">PRIVACY</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240327172957"></script>
+	<script src="js/app.min.js?_v=20240327200306"></script>
 </body>
 
 </html>
