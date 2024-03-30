@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Kanit:regular&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Nunito:regular&display=swap);
 @font-face {
@@ -1287,10 +1288,6 @@ textarea.input {
   .button:hover {
     background-color: rgba(255,255,255,.2)
   }
-  .menu-footer__link:hover {
-    -webkit-transform: translateX(-.3125rem);
-    transform: translateX(-.3125rem)
-  }
 }
 @media (max-width:47.99875em) and (any-hover:none) {
   .icon-menu {
@@ -1761,6 +1758,12 @@ textarea.input {
     .hero__swipe-down {
       padding-bottom: calc(.0000000625rem + 12.4999999375 * (100vw - 48rem)/ 25.125)
     }
+  }
+}
+@media (pointer:coarse) {
+  :active,
+  :focus-visible {
+    outline: 0
   }
 }
 @media (any-hover:hover) {

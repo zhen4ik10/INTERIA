@@ -83,12 +83,21 @@
         }
     };
     function menuInit() {
-        if (document.querySelector(".icon-menu")) document.addEventListener("click", (function(e) {
-            if (bodyLockStatus && e.target.closest(".icon-menu")) {
-                bodyLockToggle();
-                document.documentElement.classList.toggle("menu-open");
-            }
-        }));
+        if (document.querySelector(".icon-menu")) {
+            document.addEventListener("click", (function(e) {
+                if (bodyLockStatus && e.target.closest(".icon-menu")) {
+                    bodyLockToggle();
+                    document.documentElement.classList.toggle("menu-open");
+                } else if (!e.target.closest(".menu__link")) functions_menuClose();
+            }));
+            document.addEventListener("keydown", (function(e) {
+                e.code === "Escape" ? functions_menuClose() : null;
+            }));
+        }
+    }
+    function functions_menuClose() {
+        bodyUnlock();
+        document.documentElement.classList.remove("menu-open");
     }
     function functions_FLS(message) {
         setTimeout((() => {
